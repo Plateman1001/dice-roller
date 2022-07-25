@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js" defer></script> -->
+    <link rel="stylesheet" href="noStrap.css">
+    <script src="index.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOTM</title>
+</head>
+
+<body>
+    <section class="d-flex justify-content-between">
+
+        <section class="container col-md-4">
+            <div class="subsec-1">
+                <div class="stats">
+                    <h1>Stats</h1>
+                </div>
+                <div class="set">
+                    <h1>Settings</h1>
+                </div>
+            </div>
+
+            <div class="subsec-2">
+                <section class="dicegroup">
+                    <div class="droll-container">
+                        <h4>Mod</h4>
+                        <input type="text" id="D2modifier" placeholder="D2">
+                        <input type="text" id="D4modifier" placeholder="D4">
+                        <input type="text" id="D6modifier" placeholder="D6">
+                        <input type="text" id="D8modifier" placeholder="D8">
+                        <input type="text" id="D10modifier" >
+                        <input type="text" id="D12modifier">
+                        <input type="text" id="D20modifier">
+                        <input type="text" id="D100modifier">
+                    </div>
+
+                    <div class="droll-container">
+                        <h4>Amount</h4>
+                        <input type="text" id="rollamount">
+                        <input type="text" id="rollamount">
+                        <input type="text" id="rollamount">
+                        <input type="text" id="rollamount">
+                        <input type="text" id="rollamount">
+                        <input type="text" id="rollamount">
+                        <input type="text" id="rollamount">
+                        <input type="text" id="rollamount">
+                    </div> 
+                    <div class="droll-container">
+                        <h4>Roll</h4>
+                        <button id="D2">d2</button>
+                        <button id="D4">d4</button>
+                        <button id="D6">d6</button>
+                        <button id="D8">d8</button>
+                        <button id="D10">d10</button>
+                        <button id="D12">d12</button>
+                        <button id="D20">d20</button>
+                        <button id="D100">d100</button>
+                        <button id="Dany">dANY</button>
+                    </div>
+
+
+                </section>
+                <section class="roll-box">
+                    <ul id="box" class="box">
+
+                    </ul>
+                    <h1>Notes</h1>
+                    ----------------------
+                    <p>This field records your latest roll at its top</p>
+                </section>
+
+            </div>
+            <div class="subsec-3">
+                <div>
+                    <h1>Quick Rolls</h1>
+                    <button>Action</button>
+                </div>
+                <div class="weapon-box">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="container col-md-4">
+            <div class="chr-details">
+                <div>
+                    <h3>Name:</h3>
+                    <input type="text">
+                </div>
+
+                <div>
+                    <h3>Class:</h3>
+                    <input type="search" name="class" id="class">
+                </div>
+
+                <div>
+                    <h3>Race:</h3>
+                    <input type="search" name="race" id="race">
+                </div>
+
+                <div>
+                    <h3>Level</h3>
+                    <input type="text" id="level">
+                </div>
+            </div>
+
+            <div class="class&hp">
+                <div class="classes">
+                    <div class="mainclass"></div>
+                    <div class="subclass"></div>
+                </div>
+
+                <div class="hp">
+                    <div>
+                        <h3 id="ac">AC:</h3>
+                        <h3 id="initiative">initiative:</h3>
+                    </div>
+
+                    <div class="life">
+                        <div>
+                            <h3>Effective HP:</h3>
+                            <h4 id="hp&temp"></h4>
+                        </div>
+                        <div class="damage-history">
+                            <h3>History:</h3>
+                            <ul id="d-hist">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hpstats">
+
+                        <div>
+                            <h3>Total:</h3>
+                            <ul id="total-hp">
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Current:</h3>
+                            <ul id="current-hp">
+
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Temp:</h3>
+                            <ul id="temp-hp">
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="splslt/limabil">
+                <div>
+                    <h2>Spell Slots / Limited Abilities</h2>
+                    <div>lock</div>
+                </div>
+
+                <div>
+                    <h2>spell slots</h2>
+                </div>
+                <div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container col-md-5">
+            <div>
+                <h2>Character References</h2>
+            </div>
+            <div>
+                <h3>Racial-dropdown</h3>
+
+                <h3>Background-dropdown</h3>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
